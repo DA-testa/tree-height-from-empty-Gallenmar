@@ -57,8 +57,10 @@ def main():
         name = input()
         if 'a' in name: 
             f = open(name, "r")
-            size = f.readline()
-            text = f.readline()
+            # size = f.readline()
+            # text = f.readline()
+            text = f.read()
+            raise Exception(text)
     
     Ttree = text.split(" ")
     Itree = []
