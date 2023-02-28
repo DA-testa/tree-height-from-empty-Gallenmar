@@ -49,15 +49,15 @@ def main():
     # input values in one variable, separate with space, split these values in an array
     # call the function and output it's result
 
-    # text = input()
-    # if 'I' in text:
-    size = input()
     text = input()
-    Ttree = text.split(" ")
-    Itree = []
-    for i in Ttree:
-        Itree.append(int(i))
-    size = len(Itree)
+    if 'I' in text:
+        size = input()
+        text = input()
+        Ttree = text.split(" ")
+        Itree = []
+        for i in Ttree:
+            Itree.append(int(i))
+        size = len(Itree)
     
     print(compute_height(size,Itree))
 
