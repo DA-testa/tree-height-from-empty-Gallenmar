@@ -53,13 +53,21 @@ def main():
     if 'I' in text:
         size = input()
         text = input()
-        Ttree = text.split(" ")
-        Itree = []
-        for i in Ttree:
-            Itree.append(int(i))
-        size = len(Itree)
+    elif 'F' in text:
+        name = input()
+        if 'a' in name: 
+            f = open(name, "r")
+            size = f.readline()
+            text = f.readline()
     
+    Ttree = text.split(" ")
+    Itree = []
+    for i in Ttree:
+        Itree.append(int(i))
+    size = len(Itree)
     print(compute_height(size,Itree))
+        
+    
 
 
 # In Python, the default limit on recursion depth is rather low,
