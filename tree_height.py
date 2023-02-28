@@ -55,7 +55,7 @@ def main():
         text = input()
     elif 'F' in text:
         name = input()
-        if 'a' in name: 
+        if not 'a' in name: 
             f = open(name, "r")
             # size = f.readline()
             # text = f.readline()
